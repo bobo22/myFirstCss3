@@ -1,0 +1,186 @@
+<!--
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/19 11:20
+ * 版本： [1.0, 2017/06/19]
+ * 版权： 江苏国泰新点软件有限公司
+ * 描述：我的预约
+ -->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>我的预约</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common_list.css',
+				'css/personalcenter/my_reserve.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="segmentedControl" class="mui-segmented-control">
+				<a class="mui-control-item mui-active" href="#item1">全部
+					<div></div>
+				</a>
+				<a class="mui-control-item" href="#item2">已预约
+					<div></div>
+				</a>
+				<a class="mui-control-item" href="#item3">已取消
+					<div></div>
+				</a>
+				<a class="mui-control-item" href="#item4">已过期
+					<div></div>
+				</a>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<ul class="mui-table-view">
+						<li>
+							<div class="li-title">这里的我的预约事项名称</div>
+							<div>
+								<div class="li-txt">
+									<div>预约号</div>
+									<div>1000222</div>
+									<button type="button" class="btn">取消预约</button>
+								</div>
+								<div class="li-txt">
+									<div>预约人</div>
+									<div class="apply-name">李大大</div>
+								</div>
+								<div class="li-txt">
+									<div>预约地点</div>
+									<div>松江区乐都西路867号-871号</div>
+								</div>
+								<div class="li-txt">
+									<div>预约时间</div>
+									<div>2017-06-05 17:00~18:00</div>
+								</div>
+								<div class="triangle"><span>已预约</span></div>
+							</div>
+						</li>
+						<li>
+							<div class="li-title">这里的我的预约事项名称</div>
+							<div>
+								<div class="li-txt">
+									<div>预约号</div>
+									<div>1000222</div>
+								</div>
+								<div class="li-txt">
+									<div>预约人</div>
+									<div class="apply-name">李大大</div>
+								</div>
+								<div class="li-txt">
+									<div>预约地点</div>
+									<div>松江区乐都西路867号-871号</div>
+								</div>
+								<div class="li-txt">
+									<div>预约时间</div>
+									<div>2017-06-05 17:00~18:00</div>
+								</div>
+								<div class="triangle"><span>已取消</span></div>
+							</div>
+						</li>
+						<li>
+							<div class="li-title">这里的我的预约事项名称</div>
+							<div>
+								<div class="li-txt">
+									<div>预约号</div>
+									<div>1000222</div>
+								</div>
+								<div class="li-txt">
+									<div>预约人</div>
+									<div class="apply-name">李大大</div>
+								</div>
+								<div class="li-txt">
+									<div>预约地点</div>
+									<div>松江区乐都西路867号-871号</div>
+								</div>
+								<div class="li-txt">
+									<div>预约时间</div>
+									<div>2017-06-05 17:00~18:00</div>
+								</div>
+								<div class="triangle"><span>已过期</span></div>
+							</div>
+						</li>
+						<li>
+							<div class="li-title">这里的我的预约事项名称</div>
+							<div>
+								<div class="li-txt">
+									<div>预约号</div>
+									<div>1000222</div>
+								</div>
+								<div class="li-txt">
+									<div>预约人</div>
+									<div class="apply-name">李大大</div>
+								</div>
+								<div class="li-txt">
+									<div>预约地点</div>
+									<div>松江区乐都西路867号-871号</div>
+								</div>
+								<div class="li-txt">
+									<div>预约时间</div>
+									<div>2017-06-05 17:00~18:00</div>
+								</div>
+								<div class="triangle"><span>已预约</span></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							第二个选项卡子项-1
+						</li>
+						<li class="mui-table-view-cell">
+							第二个选项卡子项-2
+						</li>
+						<li class="mui-table-view-cell">
+							第二个选项卡子项-3
+						</li>
+					</ul>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							第三个选项卡子项-1
+						</li>
+						<li class="mui-table-view-cell">
+							第三个选项卡子项-2
+						</li>
+						<li class="mui-table-view-cell">
+							第三个选项卡子项-3
+						</li>
+					</ul>
+				</div>
+				<div id="item4" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							第四个选项卡子项-1
+						</li>
+						<li class="mui-table-view-cell">
+							第四个选项卡子项-2
+						</li>
+						<li class="mui-table-view-cell">
+							第四个选项卡子项-3
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/personalcenter/my_reserve.js");
+	</script>
+
+</html>

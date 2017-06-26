@@ -1,0 +1,54 @@
+<!--
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/21 15:50
+ * 版本： [1.0, 2017/06/21]
+ * 版权： 江苏国泰新点软件有限公司
+ * 描述：登录
+ -->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>登录</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/personalcenter/login.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-input-group">
+			    <div class="mui-input-row">
+			        <div class="login-icon"><img src="../../img/mypersonalcenter/test_setting.png"/></div>
+			        <input type="text" id="loginid" class="mui-input-clear" placeholder="请输入账号">
+			    </div>
+			    <div class="mui-input-row">
+			        <div class="login-icon"><img src="../../img/mypersonalcenter/test_setting.png"/></div>
+			        <input type="password" id="password" class="mui-input-clear" placeholder="请输入密码">
+			    </div>
+			</div>
+			<div class="btn">
+				<button type="button" class="mui-btn mui-btn-blue btn-blue">登&nbsp;&nbsp;录</button>
+				<div class="btn-txt">
+					<div class="register">注册账号</div>
+					<div class="forgetpwd">忘记密码?</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/personalcenter/login.js");
+	</script>
+
+</html>

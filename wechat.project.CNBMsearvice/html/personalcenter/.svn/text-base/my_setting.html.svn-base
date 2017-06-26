@@ -1,0 +1,38 @@
+<!--
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/19 10:00
+ * 版本： [1.0, 2017/06/19]
+ * 版权： 江苏国泰新点软件有限公司
+ * 描述：我的设置
+ -->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>我的设置</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/personalcenter/my_setting.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			
+		</div>
+	</body>
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/personalcenter/my_setting.js");
+	</script>
+
+</html>

@@ -1,0 +1,117 @@
+/**
+ * 作者： 戴科
+ * 创建时间： 2017/6/15 16:00
+ * 版本： [1.0, 2017/6/15]
+ * 版权：江苏国泰新点软件有限公司
+ * 描述： 详情页
+ */
+
+body,
+.mui-content {
+	background: white;
+	font-family: "微软雅黑";
+}
+
+.title {
+	width: 100%;
+}
+
+.tit {
+	font-size: 18px;
+	color: #333333;
+	font-weight: bold;
+	line-height: 28px;
+	margin: 2% 4% 0% 4%;
+}
+
+.date {
+	font-size: 14px;
+	color: #989898;
+	line-height: 28px;
+	margin: 0% 4%;
+}
+
+.dashed {
+	border-bottom: dashed 1px;
+	color: #d3d3d3;
+	margin: 2% 4%;
+}
+
+.content {
+	margin: 0% 4%;
+	font-size: 15px;
+	color: #333333;
+	line-height: 28px;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+#news_outline {
+	font-family: System;
+	color: #5a5a5a;
+	font-size: 14px;
+	text-align: left;
+	padding-bottom: 16px;
+	padding-top: 4px;
+}
+
+.ParagraphIndent img,
+p img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.ParagraphIndent,
+p,
+P {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0;
+	letter-spacing: 0.1px;
+	color: #121212;
+	text-indent: 2em;
+	font-size: 19px;
+	line-height: 150%;
+	overflow: hidden;
+	word-wrap: break-word;
+	word-break: bre-all;
+	height: auto;
+	zoom: 1;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	padding-left: 2px;
+	font-family: System;
+}
+
+#news_title {
+	font-weight: bold;
+	text-align: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 0.1px;
+	color: #121212;
+	font-size: 20px;
+	line-height: 120%;
+	overflow: hidden;
+	word-wrap: break-word;
+	word-break: bre-all;
+	height: auto;
+	zoom: 1;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	font-family: System;
+	padding-right: 6px
+}
+
+;

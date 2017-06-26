@@ -1,0 +1,318 @@
+<!--
+ * 作者： libo
+ * 创建时间： 2017/6/19 8:00
+ * 版本： [1.0, 2017/6/19]
+ * 版权： 江苏国泰新点软件有限公司
+ * 描述：信息详情
+ -->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>信息详情</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/common/common_search.css',
+				'css/netappointment/appointment.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" id="mui-title">预约办理</h1>
+			<span class="mui-icon mui-icon-bars icon-choose" id="funchange"></span>
+		</header>
+		<!--
+        	描述： 点击头部切换的内容
+        -->
+		<section class="headerchange mui-hidden" id="headerchange">
+			<div class="headerchange-title" id="changetitle">查询预约</div>
+		</section>
+		<!--
+        	描述： 右上角选项
+       -->
+		<section class="searchchange searchchangeout" id="searchchange">
+			<!--搜索内容-->
+			<section class="common-input-row bgred">
+				<div class="common-input common-search-container mui-search">
+					<span class="btn-search mui-icon mui-icon-search" id="searchBtn"></span>
+					<input type="text" class="common-input-clear" placeholder="请输入关键字或统一编码查询" id="input-searchName">
+				</div>
+			</section>
+			<div class="apartment bgred">
+				<span>返回市级大厅</span>
+			</div>
+		</section>
+
+		<section class="mask mui-hidden" id="mask">
+
+		</section>
+		<!--
+        	描述： 右侧办事点选择
+        -->
+        <section class="sidelistcontent sidecontentout" id="sidelistcontent">
+        		<ul class="mui-table-view" id="handlepoint">
+        		        <li class="mui-table-view-cell">
+        		               本区办事点1
+        		        </li>
+        		        <li class="mui-table-view-cell">
+        		        			本区办事点2
+        		        </li>
+        		        <li class="mui-table-view-cell">
+        		                 本区办事点3
+        		        </li>
+        		    </ul>
+        </section>
+        
+		<!--
+        	描述： 办理部门，右侧弹出
+        -->
+		<section class="sidecontent sidecontentout" id="sidecontent">
+			<div class="areachange" id="areachange">
+				<div class="areachoose district choosed" data-name="district">
+					区级
+				</div>
+				<div class="areachoose country" data-name="country">
+					市级
+				</div>
+			</div>
+			<div class="allarea" id="allarea">
+				<!--
+        				描述： 区级列表
+        			-->
+				<div class="districtarea" id="district">
+					<ul>
+						<li>全部</li>
+						<li>区教育局</li>
+						<li>区规土局</li>
+						<li>区卫纪委</li>
+						<li>区农委</li>
+						<li>区教育局</li>
+					</ul>
+				</div>
+				<!--
+        				描述： 市级列表
+        			-->
+				<div class="districtarea mui-hidden" id="country">
+					<ul>
+						<li>全部</li>
+						<li>市教育局</li>
+						<li>市规土局</li>
+						<li>市卫纪委</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="mui-content">
+
+			<!--
+        		描述： 预约办理内容
+       		 -->
+			<section class="appointhandle" id="appointhandle">
+				<!--搜索内容-->
+				<section class="common-input-row">
+					<div class="common-input common-search-container mui-search wh92">
+						<span class="btn-search mui-icon mui-icon-search" id="searchBtn"></span>
+						<input type="text" class="common-input-clear" placeholder="请输入事项关键字" id="input-searchName">
+					</div>
+				</section>
+				<div class="apartment" id="apartment">
+					办理部门：<span id="handleapartment">全部区级</span>
+				</div>
+
+				<!--列表内容-->
+				<section class="optionlist">
+					<ul class="content-option" id="content-option">
+						<li class="content-list">
+							<div class="itemtext">
+								<span class="list-icon"></span>
+								<span class="item-title">居住区,建筑物,构筑物名称审批(含初审)</span>
+							</div>
+
+							<div class="handlearea">
+								<span>办理点</span>
+								<span class="choosearea"></span>
+								<a><span class="mui-icon mui-icon-arrowright iconright"></span></a>
+							</div>
+						</li>
+						<li class="content-list">
+							<div class="itemtext">
+								<span class="list-icon"></span>
+								<span class="item-title">该技术利用单位辐射安全许可</span>
+							</div>
+
+							<div class="handlearea mui-hidden">
+								<span>办理点</span>
+								<span class="choosearea"></span>
+								<a><span class="mui-icon mui-icon-arrowright iconright"></span></a>
+							</div>
+
+						</li>
+						<li class="content-list">
+							<div class="itemtext">
+								<span class="list-icon"></span>
+								<span class="choosearea"></span>
+								<span class="item-title">综合验收(包括竣工验收等)</span>
+							</div>
+
+							<div class="handlearea mui-hidden">
+								<span>办理点</span>
+								<span class="choosearea"></span>
+								<a><span class="mui-icon mui-icon-arrowright iconright"></span></a>
+							</div>
+
+						</li>
+						<li class="content-list">
+							<div class="itemtext">
+								<span class="list-icon"></span>
+								<span class="item-title">建设项目选址意见书</span>
+							</div>
+
+							<div class="handlearea mui-hidden">
+								<span>办理点</span>
+								<span class="choosearea"></span>
+								<a><span class="mui-icon mui-icon-arrowright iconright"></span></a>
+							</div>
+
+						</li>
+						<li class="content-list">
+							<div class="itemtext">
+								<span class="list-icon"></span>
+								<span class="item-title">市级项目验收</span>
+							</div>
+
+							<div class="handlearea mui-hidden">
+								<span>办理点</span>
+								<span class="choosearea"></span>
+								<a><span class="mui-icon mui-icon-arrowright iconright"></span></a>
+							</div>
+
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<!--
+        		描述： 查询预约内容
+       		-->
+			<div class="advice_top advicechoose advicechooseout" id="advice_top">
+				<div class="basiccontent" id="basiccontent">
+					<h3>居住区，建筑物，构筑物名称审批(含初审)</h3>
+					<div class="location">
+						<span class="place"></span>
+						<span class="placetext">本区办事点123号</span>
+					</div>
+					<div class="formdata mui-clearfix">
+						<div class="dateicon"></div>
+						<div class="dateinput inputtext" id="appointdate">预约日期</div>
+						<div class="choosetime inputtext" id="appointtime">预约时间段</div>
+					</div>
+				</div>
+				<div class="successcontent mui-hidden" id="successcontent">
+					<div class="require_info re_success">
+						<h3>预约成功</h3>
+						<p>以下信息已成功发送至手机</p>
+						<p>办理时(请携带本人身份证)及相关办理材料进行处理</p>
+					</div>
+					<dl>
+						<dt>预约号:</dt>
+						<dd>账号</dd>
+					</dl>
+					<dl>
+						<dt>预约时间:</dt>
+						<dd>预约时间</dd>
+					</dl>
+					<dl>
+						<dt>预约地点:</dt>
+						<dd>预约地点</dd>
+					</dl>
+					<dl>
+						<dt>预约事项:</dt>
+						<dd>预约事项</dd>
+					</dl>
+				</div>
+				<div class="topline" id="topline">
+					
+				</div>
+			</div>
+			<div class="advice_bottom advicechoose advicechooseout" id="advice_bottom">
+				<div class="bottomline" id="bottomline">
+					
+				</div>
+				<div class="basiccontent" id="basiccontent">
+					<div class="bottom_choose mui-clearfix">
+						<div class="icon personicon"></div>
+						<div class="bottominput inputtext">预约人姓名</div>
+					</div>
+					<div class="bottom_choose mui-clearfix">
+						<div class="icon phoneicon"></div>
+						<div class="bottominput inputtext">预约人手机号</div>
+					</div>
+					<div class="bottom_choose mui-clearfix">
+						<div class="icon cardicon"></div>
+						<div class="bottominput inputtext">预约人身份证号</div>
+					</div>
+					<div class="submit" id="submit">
+						提交预约
+					</div>
+				</div>
+
+			</div>
+
+			<!--	描述： t填写预约信息需要的遮罩以及底部按钮-->
+			<section class="allmask mui-hidden" id="allmask">
+
+			</section>
+
+			<section class="footer">
+				<div class="btnwrite" id="btnwrite">填写预约信息</div>
+			</section>
+			
+			
+			<!--	描述： 查询预约模块内容-->
+			<section class="searchappoint mui-hidden" id="searchappoint">
+				<!--查询预约条件-->
+				<div class="condition">
+					<div class="condition-title">
+						<span>查询预约条件</span>
+					</div>
+					<input type="text" placeholder="请输入预约编号" class="appointment"/>
+					<input type="text" placeholder="请输入证件号" class="idNumber"/>
+					<div id="search">搜索</div>
+				</div>
+				<!--预约信息-->
+				<div class="information">
+					<div class="information-title">
+						<span>预约信息</span>
+					</div>
+					<p class="first-information"><span>预约编号:</span><span></span></p>
+					<p><span>预约事项:</span><span></span></p>
+					<p><span>预约时间:</span><span></span></p>
+					<p><span>预约人:</span><span></span></p>
+					<p><span>身份证号码:</span><span></span></p>
+					<p><span>手机号:</span><span></span></p>
+					<div id="cancel">取消预约</div>
+				</div>
+			</section>
+
+		</div>
+	</body>
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/netappoint/appointment.js");
+	</script>
+
+</html>

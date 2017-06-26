@@ -1,0 +1,46 @@
+/**
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/21 15:50
+ * 版本： [1.0, 2017/06/21]
+ * 版权：江苏国泰新点软件有限公司
+ * 描述： 登录
+ */
+.mui-content {
+	margin-top: 20px;
+}
+.mui-input-group .mui-input-row {
+	display: flex;
+}
+.login-icon {
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	width: 40px;
+	height: 40px;
+}
+.login-icon img {
+	width: 20px;
+	height: 20px;
+}
+.mui-input-group .mui-input-row:last-child:after {
+	height: 0;
+}
+input::-webkit-input-placeholder {
+	font-size: ;
+	color: ;
+}
+.btn {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 80%;
+	color: blue;
+}
+.btn-blue {
+	width: 100%;
+	border-radius: 6px;
+}
+.btn-txt {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}

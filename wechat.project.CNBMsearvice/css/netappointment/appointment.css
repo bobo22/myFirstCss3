@@ -1,0 +1,640 @@
+/**
+ * 作者： 李波
+ * 创建时间： 2017/6/19 16:00
+ * 版本： [1.0, 2017/6/19]
+ * 版权：江苏国泰新点软件有限公司
+ * 描述： 详情页
+ */
+
+
+/*
+ 
+ * 头部css
+ * */
+
+.icon-choose {
+	float: right;
+	color: #FFFFFF;
+}
+
+.mui-bar-nav {
+	background-color: #9e0001!important;
+	box-shadow: none;
+}
+
+.headerchange {
+	z-index: 99;
+	position: fixed;
+	top: 44px;
+	background-color: #9e0001;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.searchchange {
+	z-index: 99;
+	position: fixed;
+	top: 44px;
+	width: 100%;
+	height: 95px;
+	transition: height 0.5s;
+	overflow: hidden;
+}
+
+.searchchangeout {
+	height: 0;
+}
+
+.bgred {
+	border-top: 1px solid #b83737!important;
+	background-color: #9e0001!important;
+}
+
+
+/*
+ 
+ * 右侧css
+ * */
+
+.mask {
+	z-index: 9;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000000;
+	opacity: 0.5;
+}
+
+.sidecontent {
+	z-index: 99;
+	position: absolute;
+	width: 70%;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 0 10px;
+	background-color: #302e33;
+	transition: right 0.5s;
+}
+.sidelistcontent {
+	z-index: 99;
+	position: absolute;
+	width: 70%;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #F5F5F5;
+	transition: right 0.5s;
+}
+
+.sidecontentout {
+	right: -70%;
+}
+
+.sidecontent ul {
+	list-style-type: none;
+	color: #FFF;
+	font-size: 14px;
+	padding-left: 0;
+	line-height: 36px;
+}
+
+.sidecontent ul li {
+	border-bottom: 1px solid #49454c;
+}
+
+.areachange {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 2px solid #49454c;
+}
+
+.areachange div {
+	width: 50%;
+	float: left;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 16px;
+}
+
+.choosed {
+	background-color: #49454c;
+}
+
+
+/*
+ 
+ * 针对搜索做出的一些处理
+ * */
+
+.mui-search {
+	width: 100%;
+}
+
+.common-input-row .common-input {
+	border-radius: 5px!important;
+}
+
+.common-input-row .btn-search {
+	float: right;
+	margin-right: 5px;
+}
+
+.common-input-row {
+	background-color: #302e33;
+	height: 50px;
+	padding-top: 9px;
+}
+
+.apartment {
+	width: 100%;
+	background-color: #302e33;
+	color: #FFFFFF;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+	font-size: 14px;
+	border-top: 1px solid #49454c;
+}
+
+
+/*
+ 
+ * 内容展示的一些css
+ * */
+
+.content-option li:nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+.content-option {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.content-option li {
+	padding-left: 10px;
+	min-height: 36px;
+	max-height: 72px;
+}
+
+.itemtext {
+	min-height: 36px;
+	line-height: 36px;
+}
+
+.item-title {
+	font-size: 14px;
+}
+
+.content-list h4 {
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: normal;
+}
+
+.handlearea {
+	min-height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	border-top: 1px solid #CCC;
+}
+
+.iconright {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin: 5px 5px 0 0;
+	font-size: 20px;
+	color: #CCC;
+}
+
+
+/*
+ 
+ * 底部按钮以及遮罩
+ * */
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 58px;
+	line-height: 58px;
+	width: 100%;
+	background: #eee;
+	border-top: 1px #ccc solid;
+}
+
+.btnwrite {
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #FFF;
+	margin-left: 5%;
+	margin-top: 9px;
+	background-color: #eb4b3f;
+	border-radius: 5px;
+}
+
+.allmask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000000;
+	opacity: 0.7;
+	z-index: 25;
+}
+
+
+/*
+ 
+ * 弹出内容样式
+ * */
+
+.advicechoose {
+	position: absolute;
+	width: 70%;
+	left: 15%;
+	transition: top 1s;
+	z-index: 99;
+}
+
+.advicechooseout {
+	top: -1000px!important;
+}
+
+.advice_top {
+	top: 100px;
+	height: 164px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	min-height: 150px;
+	/*background: url(../../img/netappoint/bg_ticket_top_after_w300.png) no-repeat bottom;*/
+}
+.topchangeheight {
+	height: 158px;
+}
+
+.topline {
+	background: url(../../img/netappoint/bg_ticket_top_after_w300.png) no-repeat bottom center;
+	height: 6px;
+	width: 100%;
+}
+
+.toplinechange {
+	background: url(../../img/netappoint/bg_ticket_top_after_02_w300.png) no-repeat;
+}
+
+.bottomline {
+	background: url(../../img/netappoint/bg_ticket_bottom_before_w300.png) no-repeat bottom center;
+	height: 6px;
+	width: 100%;
+}
+
+.bottomlinechange {
+	background: url(../../img/netappoint/bg_ticket_bottom_before_02_w300.png) no-repeat;
+}
+
+.advice_bottom {
+	top: 264px;
+	height: 200px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	min-height: 150px;
+	/*background: url(../../img/netappoint/bg_ticket_bottom_before_w300.png) no-repeat top;*/
+}
+.bottomchangeheight {
+	height: 206px;
+}
+
+.advice_bottom_hidden {
+	display: none;
+}
+
+.advice_bottom_change {
+	animation: action 1s ease-out infinite;
+	animation-iteration-count: 1;
+}
+
+@keyframes action {
+	0% {
+		transform: rotate(0deg);
+		transform-origin: 0px 0px 0px;
+	}
+	100% {
+		transform: rotate(15deg);
+		transform-origin: 0px 0px 0px;
+	}
+}
+
+.basiccontent {
+	padding: 20px;
+	background-color: #F5F5F5;
+}
+
+.basiccontent h3 {
+	font-size: 20px;
+}
+
+.location {
+	text-align: center;
+}
+
+.place {
+	display: inline-block;
+	background: url(../../img/netappoint/icon_appoint.png) no-repeat 0 -130px;
+	width: 24px;
+	height: 24px;
+	vertical-align: bottom;
+}
+
+.placetext {
+	font-size: 14px;
+}
+
+.formdata {
+	border: 1px solid #CCCCCC;
+	height: 34px;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+
+.dateicon {
+	float: left;
+	background: #ffb9a0 url(../../img/netappoint/icon_appoint.png) no-repeat -23px -4px;
+	width: 34px;
+	height: 100%;
+}
+
+.dateinput {
+	float: left;
+	width: 40%!important;
+	height: 100%;
+	border-right: 1px solid #CCCCCC;
+}
+
+.choosetime {
+	float: left;
+	width: calc(60% - 42px);
+	height: 100%;
+}
+
+.bottom_choose {
+	border: 1px solid #CCCCCC;
+	height: 34px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+.icon {
+	float: left;
+	width: 34px;
+	height: 100%;
+}
+
+.personicon {
+	background: #ffb9a0 url(../../img/netappoint/icon_appoint.png) no-repeat -63px -3px;
+}
+
+.phoneicon {
+	background: #ffb9a0 url(../../img/netappoint/icon_appoint.png) no-repeat -143px -4px;
+}
+
+.cardicon {
+	background: #ffb9a0 url(../../img/netappoint/icon_appoint.png) no-repeat -103px -4px;
+}
+
+.bottominput {
+	float: left;
+	width: 80%!important;
+	height: 100%;
+}
+
+.inputtext {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 34px;
+	padding-left: 10px;
+	color: #cccccc;
+}
+
+.submit {
+	background-color: #eb4b3f;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 3px;
+}
+
+
+/*
+ * 查询预约模块内容
+ * */
+
+.searchappoint {
+	position: absolute;
+	top: 44px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #F5F5F5;
+}
+
+.condition {
+	height: 210px;
+	margin-top: 14px;
+	background: #fff;
+	border-top: 1px solid #CDCDCD;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.information {
+	height: 285px;
+	margin-top: 14px;
+	background: #fff;
+	border-top: 1px solid #CDCDCD;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.condition-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.condition-title span {
+	display: inline-block;
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 5%;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.appointment {
+	width: 90% !important;
+	height: 32px !important;
+	font-size: 14px;
+	margin-top: 14px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.idNumber {
+	width: 90% !important;
+	height: 32px !important;
+	font-size: 14px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.information-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.information-title span {
+	display: inline-block;
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 5%;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.information p {
+	height: 16px;
+	line-height: 16px;
+	width: 100%;
+	color: #666;
+}
+
+.first-information {
+	margin-top: 6px;
+}
+
+.information p span:first-child {
+	display: block;
+	text-align: right;
+	width: 30%;
+}
+
+.information p span:last-child {
+	display: block;
+	text-align: right;
+	width: 70%;
+}
+
+#search {
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	background: #EB4B3F;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+}
+
+#cancel {
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	text-align: center;
+	border: 1px solid #cdcdcd;
+	border-radius: 6px;
+}
+
+
+/*
+ 
+ * 预约成功内容css
+ * */
+
+.successcontent {
+	padding: 20px 20px 15px 20px;
+	background: #f8f8f8;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.re_success {
+	background-position: 10px 0;
+	border-bottom: 1px #ccc dashed;
+}
+
+.require_info {
+	padding: 0 0 10px 100px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	background: url(../../img/netappoint/icon_require_newpage.png) no-repeat;
+}
+
+.require_info p {
+	font-size: 12px;
+	color: #eb4b3f;
+}
+
+.require_info p {
+	margin-bottom: 8px;
+	line-height: 100%;
+}
+
+.require_info h3 {
+	margin: 0 0 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.successcontent dl {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #333;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 0;
+    padding: 0;
+}
+.successcontent dl dt {
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+.successcontent dl dd {
+    display: inline;
+    margin: 0;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 320px) {
+	.advicechoose{
+		left: 5%;
+		width: 90%;
+	}
+}
+@media screen and (min-width: 375px) {
+	.advicechoose{
+		left: 10%;
+		width: 80%;
+	}
+}

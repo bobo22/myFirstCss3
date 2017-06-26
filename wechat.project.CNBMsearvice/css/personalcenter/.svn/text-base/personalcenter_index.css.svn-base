@@ -1,0 +1,144 @@
+/**
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/19 10:00
+ * 版本： [1.0, 2017/06/19]
+ * 版权：江苏国泰新点软件有限公司
+ * 描述： 个人中心模块首页
+ */
+
+body,
+.mui-content {
+	background-color: grey;
+}
+.mui-content {
+	/*待定 */
+	margin-top: ;
+	border-top: ;
+	background-color: #FFFFFF;
+}
+/*头部*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	background: url('../../img/home/img_home_bottom_bg.png') no-repeat;
+}
+/*.header:active {
+	background-color: #eee;
+}*/
+.header-info,
+.header-cancel {
+	display: flex;
+	align-items: center;
+}
+.header-cancel {
+	position: relative;
+}
+.outside-circle {
+	display: flex;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	border: 1px solid red;
+	border-radius: 50%;
+}
+.inside-circle {
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.inside-circle img {
+	width: 100%;
+	height: 100%;
+}
+.user {
+	margin-left: 20px;
+}
+.username {
+	font-size: 22px;
+}
+.user div:last-child {
+	margin-top: 8px;
+}
+.half-circle {
+	position: absolute;
+	top: 0;
+	left: -17px;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	border-radius: 50%;
+	z-index: 2;
+}
+.cancel {
+	display: flex;
+	align-items: center;
+	width: 70px;
+	height: 30px;
+	background-color: red;
+	z-index: 5;
+}
+.cancel-img {
+	width: 20px;
+	height: 20px;
+}
+.cancel-img img {
+	width: 100%;
+	height: 100%;
+}
+.cancel-txt {
+	margin-left: 6px;
+}
+.bg {
+	width: 100%;
+	height: 10px;
+	background-color: #efeff4;
+}
+/*下方用户功能*/
+ul {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	list-style: none;
+}
+ul li {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*待定 */
+	height: ;
+}
+ul li:after {
+	position:absolute;
+	right:0;
+	bottom:0;
+	left:15px;
+	height:1px;
+	content:' ';
+	-webkit-transform:scaleY(.5);
+	transform:scaleY(.5);
+	background-color:red;
+}
+.li-last:after {
+	height: 0;
+}
+.my-function {
+	display: flex;
+	align-items: center;
+}
+.my-function div {
+	/*待定 */
+	margin-left: ;
+	font-size: ;
+	color: ;
+}
+.mui-icon {
+	/*待定 */
+	font-size: ;
+	color: ;
+}

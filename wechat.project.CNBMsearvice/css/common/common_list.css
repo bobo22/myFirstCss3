@@ -1,0 +1,34 @@
+/**
+ * 通用列表
+ */
+
+/*通用tab切换*/
+.mui-segmented-control {
+	/*待定*/
+	background-color: blue;
+}
+.mui-segmented-control .mui-control-item.mui-active div {
+	margin: 0 auto;
+	width: 70%;
+	height: 1px;
+	background-color: red;
+}
+.mui-segmented-control .mui-control-item.mui-active {
+    background-color: transparent;
+}
+.mui-segmented-control .mui-control-item {
+	position: relative;
+	border: 0;
+}
+.mui-segmented-control .mui-control-item:before {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	content: '';
+	width: 1px;
+	height: 20px;
+	background-color: red;
+}
+.mui-segmented-control .mui-control-item:first-child:before {
+	width: 0;
+}

@@ -1,0 +1,100 @@
+<!--
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/19 10:00
+ * 版本： [1.0, 2017/06/19]
+ * 版权： 江苏国泰新点软件有限公司
+ * 描述：个人中心模块首页
+ -->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>个人中心</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/personalcenter/personalcenter_index.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="header">
+				<div class="header-info">
+					<div class="outside-circle">
+						<div class="inside-circle"><img src="../../img/mypersonalcenter/timg.jpg" /></div>
+					</div>
+					<div class="user">
+						<div class="username">用户名</div>
+						<div>高级实名认证</div>
+					</div>
+				</div>
+				<div class="header-cancel">
+					<div class="half-circle"></div>
+					<div class="cancel">
+						<div class="cancel-img"><img src="../../img/mypersonalcenter/test_setting.png"/></div>
+						<div class="cancel-txt">注销</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg"></div>
+			<ul>
+				<li class="my-deal">
+					<div class="my-function">
+						<img src="../../img/mypersonalcenter/test_setting.png" />
+						<div>我的办件</div>
+					</div>
+					<div class="mui-icon mui-icon-arrowright"></div>
+				</li>
+				<li class="my-reserve">
+					<div class="my-function">
+						<img src="../../img/mypersonalcenter/test_setting.png" />
+						<div>我的预约</div>
+					</div>
+					<div class="mui-icon mui-icon-arrowright"></div>
+				</li>
+				<li class="my-share">
+					<div class="my-function">
+						<img src="../../img/mypersonalcenter/test_setting.png" />
+						<div>我的分享</div>
+					</div>
+					<div class="mui-icon mui-icon-arrowright"></div>
+				</li>
+				<li class="my-evaluate">
+					<div class="my-function">
+						<img src="../../img/mypersonalcenter/test_setting.png" />
+						<div>我的评价</div>
+					</div>
+					<div class="mui-icon mui-icon-arrowright"></div>
+				</li>
+				<li class="my-collect">
+					<div class="my-function">
+						<img src="../../img/mypersonalcenter/test_setting.png" />
+						<div>我的收藏</div>
+					</div>
+					<div class="mui-icon mui-icon-arrowright"></div>
+				</li>
+				<li class="my-setting li-last">
+					<div class="my-function">
+						<img src="../../img/mypersonalcenter/test_setting.png" />
+						<div>我的设置</div>
+					</div>
+					<div class="mui-icon mui-icon-arrowright"></div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/personalcenter/personalcenter_index.js");
+	</script>
+
+</html>

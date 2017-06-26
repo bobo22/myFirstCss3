@@ -1,0 +1,70 @@
+<!--
+ * 作者： 戴科
+ * 创建时间： 2017/6/15 8:00
+ * 版本： [1.0, 2017/6/15]
+ * 版权： 江苏国泰新点软件有限公司
+ * 描述：消息列表
+ -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/personal/noticelist.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--下拉刷新容器-->
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view " id="listdata">
+						<!--<div class="date">
+							<span class="datetime">{{SendDate}}</span>
+						</div>
+						<li class="mui-table-view-cell" id="{{MessageGuid}}">
+							<div class="mui-slider-right mui-disabled delete">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<div class="mui-slider-handle title">
+								{{Title}}
+								<span class="new">new</span>
+							</div>
+
+						</li>
+						<li class="mui-table-view-cell" id="{{MessageGuid}}">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<div class="mui-slider-handle title">
+								{{Title}}
+								<span class="new">new</span>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/personal/noticelist.js');
+	</script>
+
+</html>

@@ -1,0 +1,71 @@
+/**
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/19 11:20
+ * 版本： [1.0, 2017/06/19]
+ * 版权：江苏国泰新点软件有限公司
+ * 描述： 我的办件
+ */
+.mui-table-view {
+	background-color: transparent;
+}
+.mui-table-view li {
+	position: relative;
+	margin-bottom: 10px;
+	height: auto;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 1px blue;
+}
+.li-title {
+	display: -webkit-box;
+	border-bottom: 1px solid red;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.li-txt {
+	display: flex;
+	height: 30px;
+	line-height: 30px;
+}
+.li-txt div {
+	position: relative;
+}
+.li-txt div:after {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 1px;
+	height: 20px;
+	background-color: red;
+	content: '';
+}
+.li-txt div:last-child:after {
+	width: 0;
+}
+.apply-name {
+	color: blue;
+}
+/*右下角三角*/
+.triangle {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border: 25px solid red;
+	border-color: transparent red red transparent;
+}
+/*三角形内文字*/
+.triangle span {
+	position: absolute;
+	right: -40px;
+	bottom: -15px;
+	display:block;
+	white-space: nowrap;
+	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}

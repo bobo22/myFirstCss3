@@ -1,0 +1,50 @@
+<!--
+ * 作者： 钱家冬
+ * 创建时间： 2017/06/19 17:15
+ * 版本： [1.0, 2017/06/19]
+ * 版权： 江苏国泰新点软件有限公司
+ * 描述：取消预约
+ -->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>取消预约</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/personalcenter/cancel_reservation.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="content">
+				<div class="mui-input-row">
+					<label>预约编号</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入预约编号">
+				</div>
+				<div class="mui-input-row">
+					<label>身份证号</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入身份证号">
+				</div>
+			</div>
+			<div class="btn">
+				<button type="button" class="mui-btn mui-btn-blue btn-blue">取消预约</button>
+			</div>
+		</div>
+	</body>
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/personalcenter/cancel_reservation.js");
+	</script>
+
+</html>
